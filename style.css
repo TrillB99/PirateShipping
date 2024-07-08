@@ -1,0 +1,283 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+  }
+  
+  .container {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
+  
+  /* Header */
+  .header {
+    background-color: #fff;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 200px;
+    height: auto;
+  }
+  
+  .nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  .nav a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .nav a:hover {
+    color: #007bff;
+  }
+  
+  .cta-container {
+    display: flex;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .btn-primary {
+    background-color: #e74c3c; /* Change to a pirate-themed red color */
+  }
+  
+  /* Hero Section */
+  .hero {
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+  
+  .hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 1.2em;
+    color: #777;
+    margin-bottom: 30px;
+  }
+  
+  .cta-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px 20Continuing with the CSS file:
+  
+  ### CSS (`style.css`)
+  
+  ```css
+  .cta-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Services Section */
+  .services {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  
+  .services h2 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .services-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .service-item {
+    width: calc(33% - 40px);
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .service-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+  }
+  
+  .service-item h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  /* FAQ Section */
+  .faq {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  
+  .faq h2 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .accordion-item {
+    background-color: #f2f2f2;
+    padding: 15px 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .accordion-item.accordion-item-active {
+    background-color: #e74c3c; /* Change to a pirate-themed red color */
+    color: #fff;
+  }
+  
+  .accordion-title {
+    font-size: 1.2em;
+  }
+  
+  .accordion-icon {
+    font-size: 1.5em;
+  }
+  
+  .accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    padding: 0 20px;
+    border-top: 1px solid #ddd;
+    background-color: #fff;
+  }
+  
+  /* Signup Section */
+  .signup {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  
+  .signup h2 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .signup form {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .signup label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .signup input,
+  .signup select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .signup .cta-button {
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 1.2em;
+  }
+  
+  /* Contact Section */
+  .contact {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  
+  .contact h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .contact p {
+    text-align: center;
+    font-size: 1.2em;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 1px solid #ddd;
+  }
+  
+  .footer p {
+    margin: 0;
+  }
+  
+  .footer-nav {
+    margin-top: 10px;
+  }
+  
+  .footer-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .footer-nav ul li {
+    margin-right: 20px;
+  }
+  
+  .footer-nav ul li a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .footer-nav ul li a:hover {
+    color: #007bff;
+  }
+  

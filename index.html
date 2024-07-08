@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pirate Shipping Worldwide | Safe & Secure Package Forwarding</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+
+  <header class="header">
+    <div class="container">
+      <img src="images/logo.png" alt="Pirate Shipping Worldwide Logo" class="logo">
+      <nav aria-labelledby="main-navigation">
+        <h2 id="main-navigation" class="visually-hidden">Main Navigation</h2>
+        <ul class="nav">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#signup">Sign Up</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="cta-container">
+        <a href="#signup" class="btn btn-primary">Sign Up Now</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section id="home" class="hero">
+      <div class="container">
+        <h1>Ship Like a Captain with Pirate Shipping</h1>
+        <p>Your reliable and affordable package forwarding service. 100% Safe, Discreet, and Professional.</p>
+        <a href="#signup" class="cta-button">Get Started Today</a>
+      </div>
+    </section>
+
+    <section id="services" class="services">
+      <div class="container">
+        <h2>Our Treasured Services</h2>
+        <div class="services-grid">
+          <div class="service-item">
+            <img src="images/po_box_virtual_address.png" alt="PO Box Virtual Address">
+            <h3>PO Box Virtual Address</h3>
+            <p>Receive a dedicated virtual mailbox address for personal or business use.</p>
+          </div>
+          <div class="service-item">
+            <img src="images/monthly_subscription.png" alt="Affordable Monthly Plans">
+            <h3>Affordable Monthly Plans</h3>
+            <p>Subscribe to our service for as low as $35 per month, with secure package handling included.</p>
+          </div>
+          <div class="service-item">
+            <img src="images/package_forwarding.png" alt="Worldwide Package Forwarding">
+            <h3>Worldwide Package Forwarding</h3>
+            <p>Forward your packages to any location worldwide with our discounted shipping rates.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="faq">
+      <div class="container">
+        <h2>Frequently Asked Questions</h2>
+        <div class="accordion">
+          <button class="accordion-item">
+            <span class="accordion-title">What is Pirate Shipping?</span>
+            <span class="accordion-icon fas fa-angle-down"></span>
+          </button>
+          <div class="accordion-content">
+            <p>Pirate Shipping is a reliable and affordable virtual mailbox and package forwarding service. We provide a secure US address to receive your packages and then forward them to your desired location worldwide.</p>
+          </div>
+          <button class="accordion-item">
+            <span class="accordion-title">How much does it cost?</span>
+            <span class="accordion-icon fas fa-angle-down"></span>
+          </button>
+          <div class="accordion-content">
+            <p>We offer affordable monthly plans starting at $35. You can see all our pricing details on our signup page.</p>
+          </div>
+          <button class="accordion-item">
+            <span class="accordion-title">How does the forwarding process work?</span>
+            <span class="accordion-icon fas fa-angle-down"></span>
+          </button>
+          <div class="accordion-content">
+            <p>Once we receive your package, we will notify you via email. You can then provide us with the forwarding address and choose your preferred shipping method.</p>
+          </div>
+          <button class="accordion-item">
+            <span class="accordion-title">Is my package safe and secure?</span>
+            <span class="accordion-icon fas fa-angle-down"></span>
+          </button>
+          <div class="accordion-content">
+            <p>Yes, we ensure that your package is handled with the utmost care and securely stored until it is forwarded to you.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="signup" class="signup">
+      <div class="container">
+        <h2>Set Sail with Pirate Shipping</h2>
+        <form id="signup-form">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="youremail@example.com" required>
+          <label for="address">Preferred Shipping Address:</label>
+          <input type="text" id="address" name="address" placeholder="Enter your desired shipping address" required>
+          <label for="plan">Choose a Plan:</label>
+          <select id="plan" name="plan">
+            <option value="monthly">Monthly Subscription ($35/month)</option>
+          </select>
+          <button type="submit" class="cta-button">Sign Up Now</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <p>Email: <a href="mailto:contact@pirateshipping.com">contact@pirateshipping.com</a></p>
+        <p>Phone: (518) 244-0894</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 Pirate Shipping Worldwide. All rights reserved.</p>
+      <nav class="footer-nav">
+        <ul>
+          <li><a href="#">Questions? Call 000-800-040-1842</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms of Use</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelectorAll('.accordion-item').forEach(button => {
+      button.addEventListener('click', () => {
+        const accordionContent = button.nextElementSibling;
+        button.classList.toggle('accordion-item-active');
+        if (button.classList.contains('accordion-item-active')) {
+          accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
+        } else {
+          accordionContent.style.maxHeight = 0;
+        }
+      });
+    });
+  </script>
+</body>
+</html>
